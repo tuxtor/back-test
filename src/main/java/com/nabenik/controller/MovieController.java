@@ -3,6 +3,7 @@ package com.nabenik.controller;
 import com.nabenik.model.Movie;
 import com.nabenik.repository.MovieRepository;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -30,24 +31,23 @@ public class MovieController {
         return movieRepository.findById(id);
     }
 
-    @PUT
+    @POST
     public Response create(Movie movie){
         movieRepository.create(movie);
         return Response.created(URI.create("/Lol")).build();
     }
 
-    @POST
+    @PUT
     @Path("/{id}")
     public Response update(@PathParam("id") Long id, Movie movie){
-        movieRepository.update(movie);
+        movieRepository.update(id, movie);
         return Response.created(URI.create("/Lol")).build();
     }
 
     @DELETE
     @Path("/{id}")
     public Response delete(@PathParam("id") Long id){
-        Movie movie = movieRepository.findById(id);
-        movieRepository.delete(movie);
+        movieRepository.delete(id);
         return Response.ok().build();
     }
 }
