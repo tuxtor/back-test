@@ -17,8 +17,8 @@ public class Movie implements Serializable {
     @Column
     private String title;
 
-    @Column
-    private String year;
+    @Column(name="movie_year")
+    private String movie_year;
 
     @Column
     private String duration;
@@ -29,7 +29,7 @@ public class Movie implements Serializable {
 
     public Movie(String title, String year, String duration) {
         this.title = title;
-        this.year = year;
+        this.movie_year = year;
         this.duration = duration;
     }
 
@@ -57,11 +57,11 @@ public class Movie implements Serializable {
     }
 
     public String getYear() {
-        return year;
+        return movie_year;
     }
 
     public void setYear(String year) {
-        this.year = year;
+        this.movie_year = year;
     }
 
     public String getDuration() {
