@@ -1,0 +1,8 @@
+com/nabenik/repository/MovieRepository.class
+com/nabenik/controller/MovieController.class
+com/nabenik/model/Movie_.class
+com/nabenik/model/Actor_.class
+com/nabenik/model/Movie.class
+com/nabenik/util/EntityManagerProducer.class
+com/nabenik/model/Actor.class
+com/nabenik/rest/JAXRSConfiguration.class
