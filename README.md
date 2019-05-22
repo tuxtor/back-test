@@ -53,6 +53,8 @@ fun hello() = "world"
 
 1. (easy) Please include a screenshot of this project building on a regular CLI
 
+![Build-CLI](screen/Build-CLI.jpg?raw=true "Build-CLI")
+
 2. (easy) Please include a screenshot of this project running on an IDE of your choice
 
 3. (medium) Please deploy this project to a compatible application server, later include the screenshot of the list Movies endpoint
