@@ -45,6 +45,7 @@ fun hello() = "world"
 > the default profile with no -P argument used is "arquillian-payara-embedded"
 
 5. Could you guess if this project will be supported on many application servers? Which ones? Why is this possible?
+> yes, due to the use of maven, this provides a use so that it is ready on the network. this could work on various java and apache servers
 
 6. If no database is configured? Will you be able to run this project? Why?
 
