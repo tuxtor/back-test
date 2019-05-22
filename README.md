@@ -42,6 +42,7 @@ fun hello() = "world"
 > Not application servers: Tomcat and Netty
 
 4. This project defines two main profiles. Which one will be the default if -P argument is not used on Maven?
+> the default profile with no -P argument used is "arquillian-payara-embedded"
 
 5. Could you guess if this project will be supported on many application servers? Which ones? Why is this possible?
 
