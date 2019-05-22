@@ -23,6 +23,14 @@ fun hello() = "world"
 ```
 
 2. Please enumerate al least 3 Java EE APIs being used at this project, also define it's main objective
+> 1. Javax.inject
+> this package is used to standardize code segments so that they can be made reusable and even easier to manage at the time of  maintenance
+
+> 2. Javax.ws.rs
+> is an API for the administration of web services with REST architecture, providing support from the handling of routes to http requests
+
+> 3. Java.net
+> this is a java api that manages connections through the network, providing support for URL management and logical addressing
 
 3. Which of the following is not an application server?
 
@@ -31,9 +39,13 @@ fun hello() = "world"
 * Grizzly
 * Netty
 
+> Not application servers: Tomcat and Netty
+
 4. This project defines two main profiles. Which one will be the default if -P argument is not used on Maven?
+> the default profile with no -P argument used is "arquillian-payara-embedded"
 
 5. Could you guess if this project will be supported on many application servers? Which ones? Why is this possible?
+> yes, due to the use of maven, this provides a use so that it is ready on the network. this could work on various java and apache servers
 
 6. If no database is configured? Will you be able to run this project? Why?
 
@@ -41,7 +53,11 @@ fun hello() = "world"
 
 1. (easy) Please include a screenshot of this project building on a regular CLI
 
+![Build-CLI](screen/Build-CLI.jpg?raw=true "Build-CLI")
+
 2. (easy) Please include a screenshot of this project running on an IDE of your choice
+
+![Build-IDE](screen/Build-IDE.jpg?raw=true "Build-IDE")
 
 3. (medium) Please deploy this project to a compatible application server, later include the screenshot of the list Movies endpoint
 
