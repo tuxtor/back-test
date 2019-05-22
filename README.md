@@ -39,6 +39,8 @@ fun hello() = "world"
 * Grizzly
 * Netty
 
+> Not application servers: Tomcat and Netty
+
 4. This project defines two main profiles. Which one will be the default if -P argument is not used on Maven?
 
 5. Could you guess if this project will be supported on many application servers? Which ones? Why is this possible?
