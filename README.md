@@ -57,6 +57,8 @@ fun hello() = "world"
 
 2. (easy) Please include a screenshot of this project running on an IDE of your choice
 
+![Build-IDE](screen/Build-IDE.jpg?raw=true "Build-IDE")
+
 3. (medium) Please deploy this project to a compatible application server, later include the screenshot of the list Movies endpoint
 
 3. (medium) Include a screenshot of each of the endpoint operations, if needed please also check/fix the code
