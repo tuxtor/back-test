@@ -23,6 +23,14 @@ fun hello() = "world"
 ```
 
 2. Please enumerate al least 3 Java EE APIs being used at this project, also define it's main objective
+> 1. Javax.inject
+> this package is used to standardize code segments so that they can be made reusable and even easier to manage at the time of  maintenance
+
+> 2. Javax.ws.rs
+> is an API for the administration of web services with REST architecture, providing support from the handling of routes to http requests
+
+> 3. Java.net
+> this is a java api that manages connections through the network, providing support for URL management and logical addressing
 
 3. Which of the following is not an application server?
 
