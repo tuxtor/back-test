@@ -8,6 +8,8 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Path("/movies")
@@ -21,7 +23,12 @@ public class MovieController {
 
     @GET
     public List<Movie> listAll(@QueryParam("title") String title){
-        return movieRepository.listAll(title);
+
+        Movie movie1 = new Movie("The Shawshank Redemption ", "1994", "2h 22min");
+        Movie movie2 = new Movie("The Godfather", "1972", "2h 55min");
+
+        return Arrays.asList(movie1, movie2);
+
     }
 
     @GET
